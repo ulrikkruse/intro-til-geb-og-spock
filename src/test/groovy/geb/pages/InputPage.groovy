@@ -7,12 +7,12 @@ class InputPage extends Page {
     static url = "samplepagetest/"
 
     static content = {
-        titel { $('.page_heading > h1:nth-child(1)').text().trim() }
+        titel { $('.page_heading').find('h1').text().trim() }
         navn {  $('#g2599-name') }
         email {  $('#g2599-email') }
+        erfaring { $('#g2599-experienceinyears') }
         kommentar { $('#contact-form-comment-g2599-comment') }
         indsend { $('.pushbutton-wide') }
-
     }
 
     static at = {
@@ -33,7 +33,10 @@ class InputPage extends Page {
 
     void indsend() {
         this.indsend.click()
+    }
 
+    void vaelgErfaring(String niveau) {
+        erfaring.find("option").find{ it.value() == niveau }.click()
     }
 }
 
