@@ -5,6 +5,10 @@ Dette er tænkt som en lille demo af, hvordan man kan bruge Spock og Geb til aut
 
 Nogle ting i projektet er derfor alene lavet af pædagogiske årsager for at demonstrere forskellige principper, fx brugen af Where-blok, Stepwise og GebCommon :-)
 
+## Opsætning
+Hvis du vil bruge Chrome, skal der hentes en driver, pt. bruges version 2.42: `https://chromedriver.storage.googleapis.com/index.html?path=2.42/`.
+Dette kan man selv tilrette i `build.gradle`. På Mac skal driveren ligge under `Applications`.
+
 ## Sådan startes testen
 Testen kan køres på enten Chrome eller Firefox:
 
@@ -16,6 +20,14 @@ Eller evt. begge:
     ./gradlew test
 
 På Windows erstattes `./gradlew` med `gradlew.bat`.
+
+Bemærk, at dette projekt alene er verificeret på Mac.
+
+## Testrapporter
+Projektet er sat op til at bruge Spock-reports, se `https://sites.google.com/a/athaydes.com/renato-athaydes/posts/spock-reports-greattestreportsthatyouactuallywanttoread`.
+De ligger efter en kørsel under:
+
+    ./build/spock-reports
 
 ## Thanks to
 Thanks to [erdi](https://github.com/erdi) for the original [example](https://github.com/geb/geb-example-gradle) this is based on!
