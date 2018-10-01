@@ -1,0 +1,7 @@
+.gradle
+build/
+.idea
+*.iml
+.gradle/4.7/fileHashes/fileHashes.bin
+.gradle/4.7/fileHashes/fileHashes.lock
+
