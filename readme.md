@@ -19,6 +19,10 @@ Eller evt. begge:
 
     ./gradlew test
 
+Enkelte test kan man køre således:
+
+    ./gradlew firefoxTest --tests *IndtastOgVerificerInputSpec."Verificer at man kan indtaste forskellige navne (#navn)"
+
 På Windows erstattes `./gradlew` med `gradlew.bat`.
 
 Bemærk, at dette projekt alene er verificeret på Mac.
