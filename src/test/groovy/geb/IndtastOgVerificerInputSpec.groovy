@@ -53,7 +53,7 @@ class IndtastOgVerificerInputSpec extends GebCommon {
         inputPage.indsend()
 
         then: "vises det indtastede input på kvitteringssiden (output)"
-        at OutputPage
+        waitFor(60) { at OutputPage }
         verificerOutput([navn: forventetNavn])
 
         where:

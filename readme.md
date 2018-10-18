@@ -42,7 +42,10 @@ Enkelte test kan man køre således:
 
 På Windows erstattes `./gradlew` med `gradlew.bat`.
 
-Bemærk, at dette projekt alene er verificeret på Mac.
+
+###Bemærk
+Dette projekt er alene verificeret på Mac og Linux (via VirtualBox).
+Som default kører det headless i Firefox
 
 ## Testrapporter
 Projektet er sat op til at bruge Spock-reports, se `https://sites.google.com/a/athaydes.com/renato-athaydes/posts/spock-reports-greattestreportsthatyouactuallywanttoread`.
