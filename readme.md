@@ -43,7 +43,7 @@ Enkelte test kan man køre således:
 På Windows erstattes `./gradlew` med `gradlew.bat`.
 
 
-###Bemærk
+### Bemærk
 Dette projekt er alene verificeret på Mac og Linux (via VirtualBox).
 Som default kører det headless i Firefox
 
