@@ -8,6 +8,9 @@ import org.openqa.selenium.Dimension
 import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions
 import org.openqa.selenium.firefox.FirefoxDriver
+import org.openqa.selenium.firefox.FirefoxOptions
+import org.openqa.selenium.remote.CapabilityType
+import org.openqa.selenium.remote.DesiredCapabilities
 
 baseUrl = "http://www.globalsqa.com/"
 
@@ -38,7 +41,11 @@ environments {
     firefox {
         atCheckWaiting = 1
         driver = {
-            def firefoxDriver = new FirefoxDriver()
+            DesiredCapabilities desiredCapabilities = new DesiredCapabilities()
+            desiredCapabilities.setCapability(CapabilityType.ELEMENT_SCROLL_BEHAVIOR, 1)
+            FirefoxOptions options = new FirefoxOptions(desiredCapabilities)
+            options.setHeadless(true)
+            def firefoxDriver = new FirefoxDriver(options)
             firefoxDriver.manage().window().maximize()
             firefoxDriver.manage().window().setSize(new Dimension(1920, 1080))
             firefoxDriver

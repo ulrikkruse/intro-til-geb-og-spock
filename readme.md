@@ -26,7 +26,6 @@ WebDriver:
     $ sudo apt-get install python-pip
     $ sudo pip install selenium
 
-
 ## Sådan startes testen
 Testen kan køres på enten Chrome eller Firefox:
 
