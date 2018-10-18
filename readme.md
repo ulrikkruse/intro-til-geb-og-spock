@@ -9,6 +9,21 @@ Nogle ting i projektet er derfor alene lavet af pædagogiske årsager for at dem
 Hvis du vil bruge Chrome, skal der hentes en driver, pt. bruges version 2.42: `https://chromedriver.storage.googleapis.com/index.html?path=2.42/`.
 Dette kan man selv tilrette i `build.gradle`. På Mac skal driveren ligge under `Applications`.
 
+### Frisk installation
+Nedenstående er en kort beskrivelse af det, der skal installeres for at få det op at køre i Ubuntu, evt. via VirtualBox.
+Grundet `https://github.com/gradle/gradle/issues/4860` bruger jeg 'kendte' versioner at Gradle etc. :-)
+
+- IntelliJ Community Edition
+- Git
+- Curl (for at kunne installere sdkman)
+- sdkman
+– Java (8.0.181-zulu)
+– Gradle (3.5.1)
+– Groovy (2.4.10)
+- WebDriver:
+    $ sudo apt-get install python-pip
+    $ sudo pip install selenium
+
 ## Sådan startes testen
 Testen kan køres på enten Chrome eller Firefox:
 
