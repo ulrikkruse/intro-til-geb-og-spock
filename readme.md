@@ -17,12 +17,15 @@ Grundet `https://github.com/gradle/gradle/issues/4860` bruger jeg 'kendte' versi
 - Git
 - Curl (for at kunne installere sdkman)
 - sdkman
-– Java (8.0.181-zulu)
-– Gradle (3.5.1)
-– Groovy (2.4.10)
-- WebDriver:
+- Java (8.0.181-zulu)
+- Gradle (3.5.1)
+- Groovy (2.4.10)
+
+WebDriver:
+
     $ sudo apt-get install python-pip
     $ sudo pip install selenium
+
 
 ## Sådan startes testen
 Testen kan køres på enten Chrome eller Firefox:
